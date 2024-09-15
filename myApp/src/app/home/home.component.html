@@ -1,0 +1,22 @@
+<div class="div-container">
+    <div class="main">
+        <button routerLink="/singup" class="btn">singup</button>
+        <button (click)="loginComp()" class="btn">login</button>
+        <button routerLink="databinding" class="btn">databinding</button>
+        <button (click)="directives()" class="btn">Directives</button>
+        <button routerLink="lifecyclehooks" class="btn">lifecyclehooks</button>
+        <button routerLink ="parent" class="btn">parent</button>
+        <button routerLink ="subject" class="btn">subject</button>
+        <button (click)="purePipe()" class="btn">pure pipes</button>
+        <button routerLink ="templateform" class="btn">templatedrivenform</button>
+        <button routerLink="Viewchild1" class="btn">Viewchild1</button> 
+        <button routerLink="admin/adminLanding">Admin</button>
+        <button (click)="adminSignup()">Admin singup</button>
+    </div>
+</div>
+
+<div *ngIf="purePipe">
+    {{name | uppercase}}
+    {{date | date:'medium'}}
+
+</div>
